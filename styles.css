@@ -1,17 +1,11 @@
+html {
+    background-image: url('wood-veneer-none-xb3p3p-1200.jpg');
+}
+
 body {
     background-image: url('wood-veneer-none-xb3p3p-1200.jpg');
-    background-size: cover;       /* Asegura que la madera cubra toda la pantalla sin repetirse */
-    background-position: center;   /* Centra la imagen */
-    background-repeat: no-repeat;
-    background-attachment: fixed;  /* Mantiene el fondo fijo al hacer scroll */
-    
     color: white;
     font: 100% Arial, Helvetica, sans-serif;
-    
-    /* El truco mágico: le dice al body que use la altura dinámica completa */
-    min-height: 100dvh;
-    margin: 0;
-    padding: 0;
 }
 
 .manuHeader {
