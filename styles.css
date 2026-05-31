@@ -10,7 +10,7 @@ body {
     text-shadow: 0 0 5px black;
     align-items: left;
     align-content: flex-start;
-    width: 100%;
+    width: 95vw;
     background-color: rgb(0, 0, 0, 0.6);
 }
 
@@ -43,6 +43,15 @@ body {
 }
 
 @media (max-width: 768px) {
+    #manusazonLogo {
+        display: flex;
+        width: 75px;
+        height: auto;
+        margin-right: 2%;
+    }
+    .categories--container {
+    font-size: 0.9vw;
+    }
     .menu-container {
         margin: 0 5vw; 
     }

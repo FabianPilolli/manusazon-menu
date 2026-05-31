@@ -1,0 +1,9 @@
+<div class="dropdown">
+    <h1 class="dropdown-title" onclick="toggleDropdown('burgers-dropdown-content')">
+        BURGERS <span>&#9660;</span> </h1>
+    <div class="dropdown-content" id="burgers-dropdown-content">
+        <a href="burgers/originales.html">Originales</a>
+        <a href="burgers/dobles.html">Dobles</a>
+        <a href="burgers/triples">Triples</a>
+    </div>
+</div>
