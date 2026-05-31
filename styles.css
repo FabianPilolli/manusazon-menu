@@ -64,6 +64,15 @@ body {
     .image-price {
         font-size: 24px;
     }
+    .multi-price {
+        bottom: -2%;       /* Ajuste ligero de posición para pantallas pequeñas */
+        right: -2%;
+        gap: 3px;
+    }
+    
+    .multi-price .image-price {
+        font-size: 24px;   /* Sincronizado con tu tamaño de .image-price en móviles */
+    }
 }
 
 .menu-container h2{
@@ -134,6 +143,33 @@ body {
     color: black;
     border-radius: 20% 20% 20% 20%;
     font-size: 40px;
+}
+
+.multi-price {
+    display: flex;
+    flex-direction: column; /* Apila los precios verticalmente */
+    gap: 5px;               /* Añade un espacio pequeño entre cada precio */
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.multi-price .image-price {
+    position: relative;    /* Cambia a relativo para que se apilen dentro del contenedor */
+    bottom: auto;
+    right: auto;
+    margin: 0;
+    white-space: nowrap;   /* Evita que el precio y el texto se corten en líneas separadas */
+}
+
+.multi-price .image-price span {
+    font-size: 45%;        /* Reduce el tamaño del texto descriptivo para que no compita con el precio */
+    margin-left: 8px;      /* Separa el texto un poco del número */
+    color: #555;           /* Un tono un poco más suave que el negro del precio principal */
+    font-weight: bold;
+    align-self: center;    /* Centra verticalmente el texto respecto al precio */
 }
 
 .title-ingredients--container {
